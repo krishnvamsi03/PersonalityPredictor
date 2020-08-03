@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{%block body %}
+<div class="result container">
+    <div class="row mainContainer"> 
+        <div class="row">
+            <h2>you are {{type.ptype}}</h2>
+        </div>
+        <div class="row">
+            <p class="subHeading">Characteristic</p>
+            <p style="text-align: justify;">
+                {{type.characteristics}}
+            </p>
+        </div>
+        <div class="row">
+            <p class="subHeading">How other's see you</p>
+            <p style="text-align: justify;">
+                {{type.how_other_sees_them}}
+            </p>
+        </div>
+        <div class="row">
+            <p class="subHeading">Areas of growth</p>
+            <p style="text-align: justify;">
+                {{type.areas_of_growth}}
+            </p>
+        </div>
+    </div>
+</div>
+{%endblock%}
