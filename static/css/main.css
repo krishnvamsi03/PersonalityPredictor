@@ -11,7 +11,6 @@ body {
     width: 90% !important;
     margin-top: 5%;
     border-radius: 5px;
-    /* border: 1px solid gray; */
     padding: 10px 10px 10px 5px;
     height: 200px;
 }
@@ -30,17 +29,6 @@ img{
     align-content: flex-start;
 }
 
-/* .carousel-caption h3 {
-    position: relative;
-    right: 45%;
-}
-
-.carousel-caption p {
-    position: relative;
-    right: 3%;
-    width: 50%;
-    text-align: justify;
-} */
 .factsContent {
     align-content: flex-start;
     right: 4%;
