@@ -48,7 +48,6 @@
                 usage of specific platform tell us lot about our personality</p>
         </div>
         <div class="col-4">
-            <!-- <img src="{{url_for('static', filename = 'images/SocialMediaPersonality.jpg')}}" id="socialMediaPersonalityImg"> -->
             <p>Click here to know about your personality.</p>
             <button type="button" class="btn btn-primary btn-raised" data-toggle="modal" data-target="#modalForm">Try it
                 now.</button>
@@ -63,7 +62,7 @@
                     <form action="/result" , method="POST" id="predictionForm">
                         <div class="form-group">
                             <label for="platform" class="bmd-label-floating">Select One of the Platform</label>
-                            <select class="form-control" id="platform" form="predictionForm" name="platform">
+                            <select class="form-control" id="platform" form="predictionForm" name="platform" required>
                                 <option>Instagram</option>
                                 <option>Facebook</option>
                                 <option>Twitter</option>
@@ -74,24 +73,24 @@
                                 selected
                                 Platform
                             </label>
-                            <input type="text" class="form-control" id="noOfPosts" name="postNo">
+                            <input type="text" class="form-control" id="noOfPosts" name="postNo" required>
                         </div>
                         <div class="form-group">
                             <label for="noOfLikes" class="bmd-label-floating">Enter average no of likes on your
                                 Posts</label>
-                            <input type="text" class="form-control" name="likesCount" , id="noOfLikes">
+                            <input type="text" class="form-control" name="likesCount" , id="noOfLikes" required>
                         </div>
                         <div class="form-group">
                             <label for="frequentUser" class="bmd-label-floating">Frequent user of selected
                                 Platform?</label>
-                            <select class="form-control" id="frequentUser" name="frequentUser">
+                            <select class="form-control" id="frequentUser" name="frequentUser" required>
                                 <option>yes</option>
                                 <option>no</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="frequentPost" class="bmd-label-floating">Frequently Posted anything?</label>
-                            <select class="form-control" form="predictionForm" name="frequentPost" id="frequentPost">
+                            <select class="form-control" form="predictionForm" name="frequentPost" id="frequentPost" required>
                                 <option>yes</option>
                                 <option>no</option>
                             </select>
@@ -99,16 +98,16 @@
                         <div class="form-group">
                             <label for="followerCount" class="bmd-label-floating">Enter no of your followers on selected
                                 Platform</label>
-                            <input type="text" class="form-control" name="followersCount" id="followerCount">
+                            <input type="text" class="form-control" name="followersCount" id="followerCount" required>
                         </div>
                         <div class="form-group">
                             <label for="followingCount" class="bmd-label-floating">Enter no of people you are
                                 following</label>
-                            <input type="text" class="form-control" name="followingCount" id="followingCount">
+                            <input type="text" class="form-control" name="followingCount" id="followingCount" required>
                         </div>
                         <div class="form-group">
                             <label for="frequentPost" class="bmd-label-floating">Most liked about</label>
-                            <select class="form-control" form="predictionForm" name="likedabout" id="frequentPost">
+                            <select class="form-control" form="predictionForm" name="likedabout" id="frequentPost" required>
                                 <option>nature</option>
                                 <option>animals</option>
                                 <option>technology</option>
